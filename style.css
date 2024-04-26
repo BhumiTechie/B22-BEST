@@ -1,0 +1,185 @@
+@font-face {
+    font-family: family;
+    src: url(https://fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2);
+}
+@font-face {
+    font-family: sao;
+    src: url(./SaolDisplay-LightItalic.woff);
+}
+#load{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    top: -100%; 
+    /* object-fit: cover; */
+    overflow: hidden;
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+@keyframes loading {
+    0%{
+        top:0%,
+    }
+    100%{
+        top: 0%;
+    }
+}
+#load img{
+    position:absolute;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 38%;
+    left: 40%;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+}
+#cursor{
+    width: 1vw;
+    height: 1vw;
+    background-color: red;
+    border-radius: 50px;
+    position: absolute;
+}
+#nav{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px 100px;
+    font-family: 'Open Sans';
+    text-transform: capitalize;
+}
+#nav h3{
+    font-weight: 500;
+}
+#nav h3:hover{
+    color: red;
+    text-decoration: underline;
+}
+#nav img{
+    width: 60px;
+}
+#page1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+#page1 h1{
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 10%;
+    font-family: sao;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+#page1 h1::after{
+    content: "Spain & portugual";
+    top:110%;
+    position: absolute;
+    left: 33%;
+    font-size: 80px;
+    z-index: 999;
+}
+#videoplay{
+    position: relative;
+    top: 60%;
+     left: 25%;
+     width: 100%;
+    background-color: aquamarine;
+}
+#videoplay img{
+    position: absolute;
+    width: 20%;
+    top: 20%;
+    left: 55%;
+}
+#vv{
+    position: absolute;
+    width: 30%;
+    left: 24%;
+    scale:(1);
+}
+#v1{
+    position: absolute;
+    width: 20%;
+    /* height: 40%; */
+    left: 2%;  
+}
+#v2{
+    position: absolute;
+    width: 20%;
+    left: 80%;
+}
+#page1 img{
+    height: 500px;
+    position: absolute;
+    top: 60%;
+}
+#page1 #img1{
+    position: absolute; 
+    left: 9%;
+    width: 300px;
+  height: 200px;
+}
+#page1 #im{
+    position: absolute;
+    left: 2%;
+    width: 300px;
+    height: 200px;
+    top: 110%;
+}
+
+#page2{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+}
+#page2 h1{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    font-family: Voyage;
+    font-size: 8vw;
+    word-spacing: 1vw;
+    color: #fff;
+    text-transform: uppercase;
+}
+span{
+    color: rgb(100, 37, 37);
+}
+#page2 h1 i{
+    color: #5a878b;
+    position: absolute;
+    left: 48%;
+}
+#page3{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+#page3 h1{
+    position: absolute;
+    color: rgb(184, 54, 54);
+    left: 43%;
+    font-family: gilroy;
+    top: -5%;
+    font-weight: 500;
+}
